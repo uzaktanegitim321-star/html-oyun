@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    font-family: Arial;
+    margin-top: 50px;
+}
+
+#ball {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 50%;
+    margin: auto;
+    cursor: pointer;
+    position: relative;
+}
