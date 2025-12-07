@@ -2,17 +2,26 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Topa Tıkla Oyunu</title>
+    <title>Benim Oyun Profilim</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Topa Tıkla!</h1>
-    <p>Topa her tıkladığında 1 puan kazanırsın.</p>
+    <div class="profile-card">
+        <div class="avatar"></div>
+        <h1>Benim Oyun Sitem</h1>
+        <p class="subtitle">Kendi yaptığım küçük HTML oyunları</p>
 
-    <div id="ball"></div>
+        <div class="info">
+            <p><strong>Yapımcı:</strong> Sen 😄</p>
+            <p><strong>Durum:</strong> İlk oyun hazır, yenileri yolda...</p>
+        </div>
 
-    <p>Puan: <span id="score">0</span></p>
+        <h2>Oyunlarım</h2>
+        <a class="game-button" href="game.html">🎮 Topa Tıkla Oyunu</a>
 
-    <script src="game.js"></script>
+        <!-- Sonra buraya yeni oyunlar ekleyebiliriz
+        <a class="game-button" href="yeni-oyun.html">🚀 Yeni Oyun</a>
+        -->
+    </div>
 </body>
 </html>

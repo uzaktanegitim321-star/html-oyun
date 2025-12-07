@@ -1,15 +1,83 @@
+/* Genel arka plan ve yazı */
 body {
-    text-align: center;
-    font-family: Arial;
-    margin-top: 50px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #252547);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
 }
 
+/* Profil kartı */
+.profile-card {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 30px 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 90%;
+}
+
+/* Profil avatarı (yuvarlak) */
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+    background: radial-gradient(circle, #ffcc33, #ff9900);
+}
+
+/* Başlık altı */
+.subtitle {
+    color: #ccccff;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+/* Bilgi kutusu */
+.info {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Oyun butonları */
+.game-button {
+    display: block;
+    margin: 8px 0;
+    padding: 10px 15px;
+    background: #ff9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.2s;
+}
+
+.game-button:hover {
+    background: #ffc107;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* Oyun sayfasındaki top */
 #ball {
     width: 80px;
     height: 80px;
     background-color: red;
     border-radius: 50%;
-    margin: auto;
+    margin: 20px auto;
     cursor: pointer;
     position: relative;
+}
+
+/* Oyun sayfasındaki yazılar */
+h1, p {
+    text-align: center;
 }
