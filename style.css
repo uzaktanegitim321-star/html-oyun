@@ -1,28 +1,29 @@
-/* Genel arka plan ve yazı */
+/* Arka plan ve genel ayar */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #1e1e2f, #252547);
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     color: white;
 }
 
-/* Profil kartı */
-.profile-card {
+/* Ana menüdeki profil kartı ve oyun sayfası için ortak kutu */
+.profile-card,
+.game-container {
     background: rgba(0, 0, 0, 0.4);
     padding: 30px 40px;
     border-radius: 20px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    max-width: 400px;
+    max-width: 450px;
     width: 90%;
 }
 
-/* Profil avatarı (yuvarlak) */
+/* Profil avatarı (ana menü için) */
 .avatar {
     width: 90px;
     height: 90px;
@@ -31,14 +32,13 @@ body {
     background: radial-gradient(circle, #ffcc33, #ff9900);
 }
 
-/* Başlık altı */
 .subtitle {
     color: #ccccff;
     margin-top: 5px;
     margin-bottom: 20px;
 }
 
-/* Bilgi kutusu */
+/* Bilgi kutusu (ana menü) */
 .info {
     background: rgba(255, 255, 255, 0.05);
     padding: 10px 15px;
@@ -47,7 +47,7 @@ body {
     font-size: 14px;
 }
 
-/* Oyun butonları */
+/* Oyun butonları (ana menü) */
 .game-button {
     display: block;
     margin: 8px 0;
@@ -66,18 +66,61 @@ body {
     box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
-/* Oyun sayfasındaki top */
-#ball {
-    width: 80px;
-    height: 80px;
-    background-color: red;
-    border-radius: 50%;
-    margin: 20px auto;
-    cursor: pointer;
-    position: relative;
+/* Oyun sayfasındaki üst bilgi barı */
+.info-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 14px;
 }
 
-/* Oyun sayfasındaki yazılar */
+/* Oyun alanı */
+.game-area {
+    margin: 20px auto;
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Top */
+#ball {
+    width: 60px;
+    height: 60px;
+    background: #ff5722;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    transition: transform 0.05s;
+}
+
+#ball:active {
+    transform: scale(0.9);
+}
+
+/* Metinler */
 h1, p {
     text-align: center;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    background: #4caf50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #66bb6a;
+}
+
+a {
+    color: #ffd54f;
 }

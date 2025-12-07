@@ -2,16 +2,32 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Topa Tıkla Oyunu</title>
+    <title>Topa Tıkla 2.0</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Topa Tıkla!</h1>
-    <p>Topa her tıkladığında 1 puan kazanırsın.</p>
+    <div class="game-container">
+        <h1>Topa Tıkla 2.0</h1>
+        <p>30 saniye içinde mümkün olduğunca çok topa tıkla!</p>
 
-    <div id="ball"></div>
+        <div class="info-bar">
+            <span>Skor: <span id="score">0</span></span>
+            <span>Süre: <span id="time">30</span></span>
+            <span>Rekor: <span id="best">0</span></span>
+        </div>
 
-    <p>Puan: <span id="score">0</span></p>
+        <div class="game-area">
+            <div id="ball"></div>
+        </div>
+
+        <p id="status"></p>
+
+        <button id="startBtn">Başlat / Yeniden Oyna</button>
+
+        <p style="margin-top: 15px;">
+            <a href="index.html">⬅ Ana menüye dön</a>
+        </p>
+    </div>
 
     <script src="game.js"></script>
 </body>
